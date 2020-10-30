@@ -1,0 +1,168 @@
+/* liScroll styles */
+
+
+
+.breaking_news{clear: both;
+
+position: relative;
+
+height: auto;}
+
+.the_ticker{}
+
+.btn_title{/*background: none repeat scroll 0 0 #4575D4;*/
+     color: #fff;
+    float: left;
+    height: 27px;
+    position: relative;
+    z-index: 999;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    width: 180px;
+	}
+
+.btn_title:after{
+    border-left: 11px solid #02478C;
+    border-style: solid;
+    border-width: 43px 1px 43px 32px;
+    content: "";
+    height: 0;
+    left: 100%;
+        margin-top: -13px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    z-index: 1;
+    border-color: transparent transparent transparent #02478C;
+}
+
+
+
+.news_ticker{/*background: none repeat scroll 0 0 #fff;*/
+  height: 86px;
+    line-height: 50px;
+list-style: outside none outside-none;
+
+overflow: hidden;
+
+position: relative;
+
+z-index: 1;
+background: #FCB712;
+}
+
+
+
+
+
+.tickercontainer { /* the outer div with the black border */
+
+height: auto;
+
+margin: 0;
+
+overflow: hidden;
+
+padding: 0;
+
+}
+
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+
+overflow: hidden;
+
+position: relative;
+
+height: auto;margin-top: -3px;
+
+}
+
+ul.newsticker { /* that's your list */
+
+list-style-type: none;
+
+margin: 0;
+
+padding: 0;
+
+position: relative;
+list-style:none;
+
+
+
+}
+
+ul.newsticker li {
+
+float: left; /* important: display inline gives incorrect results when you check for elem's width */
+
+margin: 0;
+list-style: none;
+
+/*padding: 0;*/
+padding-right: 30px; 
+
+
+}
+
+ul.newsticker a {
+
+color: #fff;
+
+padding: 0;
+
+white-space: nowrap;
+
+font-weight: normal;
+font-size: 18px;
+
+} 
+
+ul.newsticker a:hover{color:#1B5996;text-decoration:none;}
+
+ul.newsticker span {
+    color: #1B5996;
+    font-size: 80px;
+    position: relative;
+    bottom: 2px;
+} 
+
+.btn_title span {
+       position: relative;
+    top: 18px;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.btn_title img {
+    padding-right: 13px;
+	    position: relative;
+    top: 10px;
+}
+
+
+}
+
+/*responsive css */
+
+@media only screen and (max-width: 767px) { 
+
+.btn_title span{display:none}
+
+.btn_title{padding:0px;width: 5px;}
+
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+.btn_title span{display:none}
+
+.btn_title{padding:0px;width: 5px;}
+
+}
